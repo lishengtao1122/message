@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lsdk.gene.mapper.MessageMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lsdk.service.dao.model.Message">
+        <id column="id" property="id" />
+        <result column="Idempotent_key" property="idempotentKey" />
+        <result column="task" property="task" />
+        <result column="param" property="param" />
+        <result column="try_sum" property="trySum" />
+        <result column="sts" property="sts" />
+        <result column="remark" property="remark" />
+        <result column="create_date" property="createDate" />
+        <result column="finish_date" property="finishDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, Idempotent_key, task, param, try_sum, sts, remark, create_date, finish_date
+    </sql>
+
+</mapper>

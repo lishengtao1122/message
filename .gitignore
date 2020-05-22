@@ -1,0 +1,17 @@
+*.class
+*.orig
+*.bak
+*.classpath
+*.project
+*.prefs
+*.log
+*.log*
+*.err
+*.scssc
+*.pyc
+*.iml
+target/
+.idea/
+hs_err_pid*
+.settings/
+.DS_Store
